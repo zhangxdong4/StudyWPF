@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Master.Entities/Master.Entities.csproj" Id="f6be404b-c4f4-479f-92ce-8b35b3cce91f" />
+  <Project Path="StudyWPF/StudyWPF.csproj" />
+</Solution>
