@@ -57,5 +57,10 @@ namespace StudyWPF
         {
             Application.Current.MainWindow.WindowState = WindowState.Minimized;
         }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            this.MainFrame.Navigate(new Uri("Pages/Curricula.xaml", UriKind.Relative));
+        }
     }
 }

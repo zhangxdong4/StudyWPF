@@ -76,7 +76,7 @@
                     <RowDefinition Height="44" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
-                <Grid Grid.Row="0">
+                <Grid Grid.Row="0" WindowChrome.IsHitTestVisibleInChrome="True">
                     <StackPanel
                         HorizontalAlignment="Left"
                         VerticalAlignment="Center"
@@ -91,7 +91,7 @@
                         </TextBlock>
                         <Menu Padding="0,10,10,0">
                             <MenuItem Header="时间表" />
-                            <MenuItem Header="课程表" />
+                            <MenuItem Header="课程表" Click="MenuItem_Click" />
                             <MenuItem Header="当天课程" />
                         </Menu>
                     </StackPanel>
@@ -124,7 +124,7 @@
                     </StackPanel>
                 </Grid>
                 <Grid Grid.Row="1">
-                    <Frame Source="Pages/Index.xaml"></Frame>
+                    <Frame  x:Name="MainFrame" Source="Pages/Index.xaml" NavigationUIVisibility="Hidden" ></Frame>
 
                 </Grid>
             </Grid>

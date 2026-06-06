@@ -28,11 +28,12 @@ namespace Master.Entities
         /// <summary>
         /// 任课班级
         /// </summary>
-        public StudentClass StudentClass { get; set; } =new();
+        public StudentClass? StudentClass { get; set; }
         /// <summary>
         /// 星期几
         /// </summary>  
         public DayOfWeek Weekday { get; set; } 
+
 
     }
 }
