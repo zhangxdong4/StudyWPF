@@ -124,15 +124,8 @@
                     </StackPanel>
                 </Grid>
                 <Grid Grid.Row="1">
+                    <Frame Source="Pages/Index.xaml"></Frame>
 
-                    <TextBlock
-                        HorizontalAlignment="Center"
-                        VerticalAlignment="Center"
-                        FontSize="24"
-                        FontWeight="Bold"
-                        Foreground="#FF458077">
-                        Hello, WPF!
-                    </TextBlock>
                 </Grid>
             </Grid>
         </Border>
