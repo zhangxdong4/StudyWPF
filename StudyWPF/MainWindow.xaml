@@ -65,6 +65,7 @@
             <GradientStop Color="#cceeff" Offset="1" />
             </LinearGradientBrush>-->
         </Grid.Background>
+
         <Border
             Background="Transparent"
             BorderBrush="Black"
@@ -128,6 +129,7 @@
 
                 </Grid>
             </Grid>
+
         </Border>
     </Grid>
 </Window>
