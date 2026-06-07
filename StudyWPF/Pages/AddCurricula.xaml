@@ -6,10 +6,15 @@
     xmlns:local="clr-namespace:StudyWPF"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    xmlns:vm="clr-namespace:StudyWPF.ViewModels"
     Title="AddCurricula"
+
     d:DesignHeight="450"
     d:DesignWidth="800"
     mc:Ignorable="d">
+    <Page.DataContext>
+        <vm:AddCurriculaVM/>
+    </Page.DataContext>
     <Page.Resources>
         <Style TargetType="TextBox">
             <Setter Property="Padding" Value="5,0,5,0" />
@@ -93,10 +98,14 @@
             Name="CboWeek"
             Grid.Row="0"
             Grid.Column="1"
+            HorizontalAlignment="Left"
+            Width="120"
             Margin="10"
-            VerticalAlignment="Center"
-            DisplayMemberPath="Text"
-            SelectedValuePath="Value" />
+            ItemsSource="{Binding WeekList}"
+            VerticalAlignment="Center" SelectedIndex="0"
+            DisplayMemberPath="Text"  SelectedValuePath="Value" />
+        <!---->
+
         <!--  选中的值是枚举  -->
 
     </Grid>

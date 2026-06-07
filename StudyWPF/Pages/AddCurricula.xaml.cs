@@ -22,31 +22,9 @@ namespace StudyWPF
         public AddCurricula()
         {
             InitializeComponent();
-            BindWeekToComboBox();
+           
         }
 
-        private void BindWeekToComboBox()
-        {
-            var list = new List<object>();
-
-            foreach (DayOfWeek week in Enum.GetValues(typeof(DayOfWeek)))
-            {
-                string text = week switch
-                {
-                    DayOfWeek.Sunday => "星期日",
-                    DayOfWeek.Monday => "星期一",
-                    DayOfWeek.Tuesday => "星期二",
-                    DayOfWeek.Wednesday => "星期三",
-                    DayOfWeek.Thursday => "星期四",
-                    DayOfWeek.Friday => "星期五",
-                    DayOfWeek.Saturday => "星期六",
-                    _ => week.ToString()
-                };
-
-                list.Add(new { Text = text, Value = week });
-            }
-
-            CboWeek.ItemsSource = list;
-        }
+      
     }
 }
